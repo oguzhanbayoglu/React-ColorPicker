@@ -6,18 +6,18 @@ const ImageDisplay = ({ uploadedImage, colorPalette, uploadImage }) => {
       {uploadedImage ? (
         <div className="flex flex-col items-center justify-center">
           <img
-            className="h-[50vh] w-[50vw] border-2 border-white rounded-2xl overflow-hidden object-cover"
+            className="h-[50vh] w-[50vw] rounded-2xl overflow-hidden object-cover"
             src={uploadedImage}
             alt="uploaded"
           />
-          <div className="flex gap-4">
+          <div className="flex gap-4 m-8">
             {colorPalette.map((color, index) => {
               const colorStr = color.join(",");
               console.log(colorStr);
               return (
                 <div
                   style={{ backgroundColor: `rgb(${colorStr})` }}
-                  className="h-16 w-16 rounded-full"
+                  className="h-14 w-14 rounded-full"
                 ></div>
               );
             })}

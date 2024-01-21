@@ -29,7 +29,7 @@ const App = () => {
 
   return (
     <div className="h-full min-h-full flex flex-col">
-      <header className="bg-neutral-800 text-white flex justify-between items-center p-4">
+      <header className="bg-black text-white flex justify-between items-center p-4">
         <h1 className=" text-xl ">Header</h1>
         <div className="flex items-center justify-center">
           <label
@@ -45,7 +45,7 @@ const App = () => {
         </div>
       </header>
 
-      <main className=" bg-neutral-900 text-white flex justify-center items-center flex-[1] h-full">
+      <main className=" bg-black text-white flex justify-center items-center flex-[1] h-full">
         <div>
           <ImageDisplay
             uploadImage={uploadImage}
