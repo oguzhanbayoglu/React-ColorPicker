@@ -13,7 +13,7 @@ const ImageDisplay = ({ uploadedImage, colorPalette, uploadImage }) => {
             src={uploadedImage}
             alt="uploaded"
           />
-          <div className="flex gap-4 m-10">
+          <div className="flex gap-4 m-10 flex-row flex-wrap h-[20vh] w-[50vw] justify-center">
             {colorPalette.map((color, index) => {
               const colorStr = color.join(",");
               return (
