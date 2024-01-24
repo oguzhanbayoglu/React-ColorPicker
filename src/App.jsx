@@ -30,7 +30,7 @@ const App = () => {
   return (
     <div className="h-full min-h-full flex flex-col">
       <header className="bg-black text-white flex justify-between items-center p-4">
-        <h1 className=" text-xl ">Header</h1>
+        <h1 className=" text-xl mx-4">Color Palette Generator</h1>
         <div className="flex items-center justify-center">
           <label
             htmlFor="file"
