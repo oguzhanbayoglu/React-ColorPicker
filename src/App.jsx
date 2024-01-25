@@ -16,7 +16,7 @@ const App = () => {
 
       img.onload = () => {
         const colorThief = new ColorThief();
-        const colorPalette = colorThief.getPalette(img, 10);
+        const colorPalette = colorThief.getPalette(img, 6);
         setUploadedImage(event.target.result);
         setPalette(colorPalette);
         console.log(colorPalette);
@@ -28,8 +28,8 @@ const App = () => {
   };
 
   return (
-    <div className="h-full min-h-full flex flex-col items-center justify-center">
-      <header className="bg-black text-white flex flex-col justify-between items-center p-4 gap-4">
+    <div className="h-full min-h-full flex flex-col items-center justify-center ">
+      <header className=" text-white flex flex-col justify-between items-center p-4 gap-4">
         <h1 className="text-[4rem] mt-4">
           <span className="font-thin">Color</span>{" "}
           <span className="font-black">Palette</span>{" "}
@@ -38,7 +38,7 @@ const App = () => {
         <div className="flex items-center justify-center">
           <label
             htmlFor="file"
-            className="p-2 px-4 rounded-xl  border-2 border-neutral-600 cursor-pointer"
+            className="p-2 px-4 rounded-xl border-2 border-[rgba(255,255,255,0.25)] cursor-pointer"
           >
             <div className="flex items-center justify-center gap-2">
               <span className="material-symbols-outlined text-lg">image</span>
@@ -49,7 +49,7 @@ const App = () => {
         </div>
       </header>
 
-      <main className=" bg-black text-white flex justify-center items-center flex-[1] h-full">
+      <main className="  text-white flex justify-center items-center flex-[1] h-full">
         <div>
           <ImageDisplay
             uploadImage={uploadImage}

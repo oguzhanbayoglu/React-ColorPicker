@@ -7,19 +7,25 @@ const ImageDisplay = ({ uploadedImage, colorPalette, uploadImage }) => {
   return (
     <div className="h-full flex flex-col items-center justify-center ">
       {uploadedImage ? (
-        <div className="flex flex-col items-center justify-center">
+        <div className="flex flex-col items-center justify-center relative">
           <img
             className="h-[50vh] w-[50vw] rounded-2xl overflow-hidden object-cover"
             src={uploadedImage}
             alt="uploaded"
           />
+          <img
+            className="h-[70vh] w-[70vw] rounded-2xl overflow-hidden object-cover absolute blur-[10rem] z-[-1] mt-[-17rem] opacity-50"
+            src={uploadedImage}
+            alt="uploaded"
+          />
+
           <div className="flex gap-4 m-10 flex-row flex-wrap h-[10vh] w-[50vw] justify-center">
             {colorPalette.map((color, index) => {
               const colorStr = color.join(",");
               return (
                 <div
                   style={{ backgroundColor: `rgb(${colorStr})` }}
-                  className="h-32 w-32 rounded-full ease-in-out duration-[2000ms] flex items-center justify-center cursor-pointer"
+                  className="h-32 w-32 rounded-full ease-in-out duration-[500ms] flex items-center justify-center cursor-pointer hover:scale-110"
                   onClick={() => {
                     setCopied(`#${rgbHex(color[0], color[1], color[2])}`);
                     setTimeout(() => {
@@ -75,7 +81,7 @@ const ImageDisplay = ({ uploadedImage, colorPalette, uploadImage }) => {
                 image
               </span>
 
-              <p>Upload Image</p>
+              <p className="mt-2 text-lg font-[200]">Upload Image to Start</p>
             </div>
           </label>
           <input hidden type="file" id="file" onChange={uploadImage} />
