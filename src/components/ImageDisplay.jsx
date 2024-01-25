@@ -13,7 +13,7 @@ const ImageDisplay = ({ uploadedImage, colorPalette, uploadImage }) => {
             src={uploadedImage}
             alt="uploaded"
           />
-          <div className="flex gap-4 m-10 flex-row flex-wrap h-[20vh] w-[50vw] justify-center">
+          <div className="flex gap-4 m-10 flex-row flex-wrap h-[10vh] w-[50vw] justify-center">
             {colorPalette.map((color, index) => {
               const colorStr = color.join(",");
               return (
@@ -30,18 +30,30 @@ const ImageDisplay = ({ uploadedImage, colorPalette, uploadImage }) => {
                     );
                   }}
                 >
-                  <div>
+                  <div className="flex items-center justify-center">
                     {copied == `#${rgbHex(color[0], color[1], color[2])}` ? (
-                      <span className="material-symbols-outlined ">
+                      <span
+                        className="material-symbols-outlined "
+                        style={{ transition: "ease-in-out, 1000ms" }}
+                      >
                         check_circle
                       </span>
                     ) : (
-                      <div className="flex items-center justify-center ">
-                        <span className="material-symbols-outlined ">
+                      <div
+                        className="flex items-center justify-center "
+                        style={{ transition: "ease-in-out, 1000ms" }}
+                      >
+                        <span
+                          className="material-symbols-outlined mr-1"
+                          style={{ transition: "ease-in-out, 1000ms" }}
+                        >
                           content_copy
                         </span>
-                        <span>
-                          {" "}
+                        <span
+                          style={{ transition: "ease-in-out, 1000ms" }}
+                          className="font-[300]"
+                        >
+                          {"  "}
                           {`#${rgbHex(color[0], color[1], color[2])}`}{" "}
                         </span>
                       </div>

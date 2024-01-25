@@ -28,17 +28,21 @@ const App = () => {
   };
 
   return (
-    <div className="h-full min-h-full flex flex-col">
-      <header className="bg-black text-white flex justify-between items-center p-4">
-        <h1 className=" text-xl mx-4">Color Palette Generator</h1>
+    <div className="h-full min-h-full flex flex-col items-center justify-center">
+      <header className="bg-black text-white flex flex-col justify-between items-center p-4 gap-4">
+        <h1 className="text-[4rem] mt-4">
+          <span className="font-thin">Color</span>{" "}
+          <span className="font-black">Palette</span>{" "}
+          <span className="font-thin">Generator</span>
+        </h1>
         <div className="flex items-center justify-center">
           <label
             htmlFor="file"
             className="p-2 px-4 rounded-xl  border-2 border-neutral-600 cursor-pointer"
           >
-            <div className="flex items-center justify-between gap-2">
+            <div className="flex items-center justify-center gap-2">
               <span className="material-symbols-outlined text-lg">image</span>
-              <p>Upload Image</p>
+              <p className="mt-1 font-thin">Upload Image</p>
             </div>
           </label>
           <input hidden type="file" id="file" onChange={uploadImage} />
