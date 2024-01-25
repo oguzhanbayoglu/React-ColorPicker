@@ -16,7 +16,7 @@ const App = () => {
 
       img.onload = () => {
         const colorThief = new ColorThief();
-        const colorPalette = colorThief.getPalette(img, 6);
+        const colorPalette = colorThief.getPalette(img, 9);
         setUploadedImage(event.target.result);
         setPalette(colorPalette);
         console.log(colorPalette);
@@ -50,7 +50,7 @@ const App = () => {
       </header>
 
       <main className="  text-white flex justify-center items-center flex-[1] h-full">
-        <div>
+        <div className="mt-[-5rem]">
           <ImageDisplay
             uploadImage={uploadImage}
             uploadedImage={uploadedImage}

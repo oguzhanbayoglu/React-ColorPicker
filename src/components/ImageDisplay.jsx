@@ -7,7 +7,7 @@ const ImageDisplay = ({ uploadedImage, colorPalette, uploadImage }) => {
   return (
     <div className="h-full flex flex-col items-center justify-center ">
       {uploadedImage ? (
-        <div className="flex flex-col items-center justify-center relative">
+        <div className="flex flex-col 2xl:flex-row min-[2100px]:flex-col items-center justify-center relative">
           <img
             className="h-[50vh] w-[50vw] rounded-2xl overflow-hidden object-cover"
             src={uploadedImage}
@@ -19,13 +19,13 @@ const ImageDisplay = ({ uploadedImage, colorPalette, uploadImage }) => {
             alt="uploaded"
           />
 
-          <div className="flex gap-4 m-10 flex-row flex-wrap h-[10vh] w-[50vw] justify-center">
+          <div className="flex gap-4 m-10 flex-row  flex-wrap h-[10vh] w-[50vw] 2xl:h-[50vh] 2xl:w-[22vw] 2xl:max-w-[30rem] min-[2100px]:h-[10vh] min-[2100px]:w-[50vw] min-[2100px]:max-w-[150rem] min-[2100px]:mt-16 justify-center">
             {colorPalette.map((color, index) => {
               const colorStr = color.join(",");
               return (
                 <div
                   style={{ backgroundColor: `rgb(${colorStr})` }}
-                  className="h-32 w-32 rounded-full ease-in-out duration-[500ms] flex items-center justify-center cursor-pointer hover:scale-110"
+                  className="h-32 w-32 min-[2100px]:h-[12rem] min-[2100px]:w-[12rem] rounded-full  ease-in-out duration-[500ms] flex items-center justify-center cursor-pointer hover:scale-110"
                   onClick={() => {
                     setCopied(`#${rgbHex(color[0], color[1], color[2])}`);
                     setTimeout(() => {
@@ -38,12 +38,23 @@ const ImageDisplay = ({ uploadedImage, colorPalette, uploadImage }) => {
                 >
                   <div className="flex items-center justify-center">
                     {copied == `#${rgbHex(color[0], color[1], color[2])}` ? (
-                      <span
-                        className="material-symbols-outlined "
-                        style={{ transition: "ease-in-out, 1000ms" }}
-                      >
-                        check_circle
-                      </span>
+                      <div className="flex items-center justify-center ">
+                        <span
+                          className="material-symbols-outlined mr-1"
+                          style={{ transition: "ease-in-out, 1000ms" }}
+                        >
+                          check_circle
+                        </span>
+                        <span
+                          style={{
+                            transition: "ease-in-out, 1000ms",
+                            textShadow: "2px 2px 15px rgba(1,1,1,0.8)",
+                          }}
+                          className="font-[300] mt-1"
+                        >
+                          Copied
+                        </span>
+                      </div>
                     ) : (
                       <div
                         className="flex items-center justify-center "
@@ -51,13 +62,19 @@ const ImageDisplay = ({ uploadedImage, colorPalette, uploadImage }) => {
                       >
                         <span
                           className="material-symbols-outlined mr-1"
-                          style={{ transition: "ease-in-out, 1000ms" }}
+                          style={{
+                            transition: "ease-in-out, 1000ms",
+                            textShadow: "2px 2px 15px rgba(1,1,1,0.8)",
+                          }}
                         >
                           content_copy
                         </span>
                         <span
-                          style={{ transition: "ease-in-out, 1000ms" }}
-                          className="font-[300]"
+                          style={{
+                            transition: "ease-in-out, 1000ms",
+                            textShadow: "2px 2px 15px rgba(1,1,1,0.8)",
+                          }}
+                          className="font-[300] mt-1"
                         >
                           {"  "}
                           {`#${rgbHex(color[0], color[1], color[2])}`}{" "}
@@ -92,5 +109,3 @@ const ImageDisplay = ({ uploadedImage, colorPalette, uploadImage }) => {
 };
 
 export default ImageDisplay;
-
-//className={`h-4 w-4 bg-[rgb(${color[0]},1,1)]`}
