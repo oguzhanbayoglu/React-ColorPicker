@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/React-ColorPicker/static/css/main.b1aad162.css",
+    "main.js": "/React-ColorPicker/static/js/main.0e568ba9.js",
+    "static/media/Acorn-Bold.otf": "/React-ColorPicker/static/media/Acorn-Bold.2a82187cdf1b4c80bdff.otf",
+    "static/media/Acorn-SemiBold.otf": "/React-ColorPicker/static/media/Acorn-SemiBold.fd34de2154569ae74e30.otf",
+    "static/media/Acorn-Medium.otf": "/React-ColorPicker/static/media/Acorn-Medium.d6b3bf5fab9e20defd1f.otf",
+    "static/media/Acorn-Regular.otf": "/React-ColorPicker/static/media/Acorn-Regular.69a34b37799fd1f6c284.otf",
+    "static/media/Acorn-Light.otf": "/React-ColorPicker/static/media/Acorn-Light.6a330214b9f9966ce2a6.otf",
+    "static/media/Acorn-ExtraLight.otf": "/React-ColorPicker/static/media/Acorn-ExtraLight.b768e38621b0a66e450d.otf",
+    "static/media/Acorn-Thin.otf": "/React-ColorPicker/static/media/Acorn-Thin.5a04a5ac8b5f544bc954.otf",
+    "index.html": "/React-ColorPicker/index.html",
+    "main.b1aad162.css.map": "/React-ColorPicker/static/css/main.b1aad162.css.map",
+    "main.0e568ba9.js.map": "/React-ColorPicker/static/js/main.0e568ba9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b1aad162.css",
+    "static/js/main.0e568ba9.js"
+  ]
+}
