@@ -19,7 +19,7 @@ const ImageDisplay = ({ uploadedImage, colorPalette, uploadImage }) => {
             alt="uploaded"
           />
 
-          <div className="flex gap-4 m-10 flex-row  flex-wrap h-[10vh] w-[100vw] lg:w-[90vw] xl:w-[60vw] 2xl:h-[50vh] 2xl:w-[22vw] 2xl:max-w-[30rem] min-[2100px]:h-[10vh] min-[2100px]:w-[50vw] min-[2100px]:max-w-[150rem] min-[2100px]:mt-16 justify-center items-center">
+          <div className="flex gap-4 m-10 flex-row  flex-wrap  w-[100vw] lg:w-[90vw] xl:w-[60vw] 2xl:h-[50vh] 2xl:w-[22vw] 2xl:max-w-[30rem] min-[2100px]:h-[10vh] min-[2100px]:w-[50vw] min-[2100px]:max-w-[150rem] min-[2100px]:mt-16 justify-center items-center">
             {colorPalette.map((color, index) => {
               const colorStr = color.join(",");
               return (

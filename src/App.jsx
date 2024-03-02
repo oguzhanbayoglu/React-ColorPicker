@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import ColorThief from "colorthief";
 import ImageDisplay from "./components/ImageDisplay";
+import Footer from "./components/Footer";
 
 const App = () => {
   const [uploadedImage, setUploadedImage] = useState(null);
@@ -50,7 +51,7 @@ const App = () => {
       </header>
 
       <main className="  text-white flex justify-center items-start lg:items-center flex-[1] h-full">
-        <div className="mt-[3rem] lg:mt-[-15rem]">
+        <div className="mt-[3rem] lg:mt-[-5rem]">
           <ImageDisplay
             uploadImage={uploadImage}
             uploadedImage={uploadedImage}
@@ -58,6 +59,7 @@ const App = () => {
           />
         </div>
       </main>
+      <Footer />
     </div>
   );
 };
