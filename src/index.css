@@ -49,6 +49,7 @@
 
 * {
   font-family: "Acorn";
+  min-width: 0;
 }
 
 body,
@@ -58,6 +59,10 @@ html {
   width: 100%;
   background-color: black;
   z-index: -2;
+}
+
+html {
+  zoom: 0.75;
 }
 
 #root {

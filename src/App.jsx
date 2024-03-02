@@ -5,7 +5,7 @@ import ImageDisplay from "./components/ImageDisplay";
 const App = () => {
   const [uploadedImage, setUploadedImage] = useState(null);
   const [colorPalette, setPalette] = useState(null);
-  const [dominantColor, setDominantColor] = useState(null);
+  // const [dominantColor, setDominantColor] = useState(null);
 
   const uploadImage = (e) => {
     const file = e.target.files[0];
@@ -30,7 +30,7 @@ const App = () => {
   return (
     <div className="h-full min-h-full flex flex-col items-center justify-center ">
       <header className=" text-white flex flex-col justify-between items-center p-4 gap-4">
-        <h1 className="text-[4rem] mt-4">
+        <h1 className="text-[2rem] md:text-[3rem] lg:text-[5rem] mt-16">
           <span className="font-thin">Color</span>{" "}
           <span className="font-black">Palette</span>{" "}
           <span className="font-thin">Generator</span>
@@ -49,8 +49,8 @@ const App = () => {
         </div>
       </header>
 
-      <main className="  text-white flex justify-center items-center flex-[1] h-full">
-        <div className="mt-[-5rem]">
+      <main className="  text-white flex justify-center items-start lg:items-center flex-[1] h-full">
+        <div className="mt-[3rem] lg:mt-[-15rem]">
           <ImageDisplay
             uploadImage={uploadImage}
             uploadedImage={uploadedImage}
