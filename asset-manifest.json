@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/React-ColorPicker/static/css/main.67e2534d.css",
-    "main.js": "/React-ColorPicker/static/js/main.2a83de04.js",
+    "main.css": "/React-ColorPicker/static/css/main.7134a482.css",
+    "main.js": "/React-ColorPicker/static/js/main.b7957242.js",
     "static/media/Acorn-Bold.otf": "/React-ColorPicker/static/media/Acorn-Bold.2a82187cdf1b4c80bdff.otf",
     "static/media/Acorn-SemiBold.otf": "/React-ColorPicker/static/media/Acorn-SemiBold.fd34de2154569ae74e30.otf",
     "static/media/Acorn-Medium.otf": "/React-ColorPicker/static/media/Acorn-Medium.d6b3bf5fab9e20defd1f.otf",
@@ -9,12 +9,13 @@
     "static/media/Acorn-Light.otf": "/React-ColorPicker/static/media/Acorn-Light.6a330214b9f9966ce2a6.otf",
     "static/media/Acorn-ExtraLight.otf": "/React-ColorPicker/static/media/Acorn-ExtraLight.b768e38621b0a66e450d.otf",
     "static/media/Acorn-Thin.otf": "/React-ColorPicker/static/media/Acorn-Thin.5a04a5ac8b5f544bc954.otf",
+    "static/media/logo.png": "/React-ColorPicker/static/media/logo.5f7567fa155a616147a2.png",
     "index.html": "/React-ColorPicker/index.html",
-    "main.67e2534d.css.map": "/React-ColorPicker/static/css/main.67e2534d.css.map",
-    "main.2a83de04.js.map": "/React-ColorPicker/static/js/main.2a83de04.js.map"
+    "main.7134a482.css.map": "/React-ColorPicker/static/css/main.7134a482.css.map",
+    "main.b7957242.js.map": "/React-ColorPicker/static/js/main.b7957242.js.map"
   },
   "entrypoints": [
-    "static/css/main.67e2534d.css",
-    "static/js/main.2a83de04.js"
+    "static/css/main.7134a482.css",
+    "static/js/main.b7957242.js"
   ]
 }
